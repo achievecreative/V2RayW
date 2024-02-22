@@ -91,9 +91,7 @@ namespace V2RayW
 
         public static string corePath = AppDomain.CurrentDomain.BaseDirectory + @"v2ray-core\v2ray.exe";
 
-        public static string[] necessaryFiles = new string[] {"v2ray.exe", "v2ctl.exe", "geoip.dat", "geosite.dat" };
-
-        public static string suggestedCore = "V2Ray 4.14.0 (Po) 20190131";
+        public static string[] necessaryFiles = new string[] {"v2ray.exe", "geoip.dat", "geosite.dat" };
 
         public static List<string> VMESS_SECURITY_LIST = new List<string> { @"auto", @"aes-128-gcm", @"chacha20-poly1305", @"none" };
         public static List<string> RESERVED_TAGS = new List<string> { @"main", @"direct", @"decline", @"balance" };
@@ -182,6 +180,7 @@ namespace V2RayW
                 "rules",
                 new List<object>
                 {
+                   
                     new Dictionary<string, object>
                     {
                         { "type", "field" },

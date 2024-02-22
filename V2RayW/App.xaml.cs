@@ -18,5 +18,4 @@ namespace V2RayW
             (MainWindow as V2RayW.MainWindow).QuitV2RayW(sender, null);
         }
     }
-
 }
